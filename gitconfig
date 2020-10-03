@@ -1,0 +1,16 @@
+[user]
+  name = Gareth Saxby
+  email = garethsaxby@users.noreply.github.com
+
+[credential]
+  helper = osxkeychain
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[push]
+  default = current
+  followTags = true
+  
+[pull]
+  rebase = false
