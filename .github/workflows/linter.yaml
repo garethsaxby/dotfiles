@@ -19,3 +19,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANSIBLE_DIRECTORY: /ansible
           VALIDATE_MD: true
+          VALIDATE_BASH: true
+          VALIDATE_BASH_EXEC: true
