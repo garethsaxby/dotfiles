@@ -1,0 +1,11 @@
+# Set baseline settings for all hosts
+Host *
+    ChallengeResponseAuthentication no
+    HostbasedAuthentication no
+    GSSAPIAuthentication no
+    PubkeyAuthentication yes
+    HashKnownHosts yes
+    StrictHostKeyChecking accept-new
+
+# Include sub configurations
+Include ~/.ssh/conf.d/*.conf
