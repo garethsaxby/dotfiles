@@ -18,15 +18,50 @@ NORMAL=$(tput sgr0)
 
 # Standardised print function for output messages
 function print {
-  printf '%s: %s\n' "${BOLD}${BLUE}$(date '+%Y-%m-%dT%H:%M:%S')${NORMAL}" "$@"
+  printf '%s: %s\n' "${BOLD}${BLUE}$(date '+%Y-%m-%dT%H:%M:%S')${NORMAL}" "$@" 1>&2
 }
 
-# TODO: Build list of dotfiles
-# TODO: Backup existing files
-# TODO: Symbolic link files
+# Generate and return a list of files that need linking
+# Can include both files and folders
+function file_list {
+  print "Generating File List..."
+  # TODO: Build list of dotfiles dynamically with exclude list
+  list=".aws .gitconfig .gitignore_global .ssh .zshrc"
+  printf '%s' "${list}"
+  print "${list}"
+}
+
+function link_files {
+  print "Linking dotfiles..."
+  OLD_IFS="${IFS}"
+  IFS=" "
+  PWD="$(pwd)"
+  for i in "$@"; do
+    if [ ! -L ~/${i} ] && [ ! -e ~/${i} ]; then
+      print "Linking .${i}..."
+      ln -s "${PWD}/${i}" "${HOME}/${i}"
+    else
+      print "${i} already linked"
+    fi
+  done
+  IFS="${OLD_IFS}"
+}
+
+function link_ssh_keys {
+  print "Linking ssh keys..."
+  if [ ! -L ${HOME}/.ssh/private_keys ] && [ ! -e ${HOME}/.ssh/private_keys ]; then
+    ln -s "${HOME}/Dropbox/Security/ssh_keys" "${HOME}/.ssh/private_keys"
+  fi
+}
+
 
 function main {
-  print "Installing dotfiles... (Not yet Implemented)"
+  print "Installing dotfiles..."
+  FILE_LIST="$(file_list)"
+  # shellcheck disable=SC2086 # We want to split on an IFS here
+  link_files ${FILE_LIST}
+  link_ssh_keys
+  print "Dotfiles installed"
 }
 
 main
