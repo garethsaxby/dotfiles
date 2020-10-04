@@ -14,6 +14,7 @@ trap fatal_err ERR
 # See https://stackoverflow.com/a/4332530 for details
 BOLD=$(tput bold)
 BLUE=$(tput setaf 153)
+GREY=$(tput setaf 245)
 NORMAL=$(tput sgr0)
 
 # Standardised print function for output messages
@@ -41,7 +42,7 @@ function link_files {
       print "Linking .${i}..."
       ln -s "${PWD}/${i}" "${HOME}/${i}"
     else
-      print "${i} already linked"
+      print "${GREY}${i} already linked${NORMAL}"
     fi
   done
   IFS="${OLD_IFS}"
