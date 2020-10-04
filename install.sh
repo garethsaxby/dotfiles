@@ -49,7 +49,7 @@ function link_files {
 
 function link_ssh_keys {
   print "Linking ssh keys..."
-  if [ ! -L ${HOME}/.ssh/private_keys ] && [ ! -e ${HOME}/.ssh/private_keys ]; then
+  if [ ! -L "${HOME}/.ssh/private_keys" ] && [ ! -e "${HOME}/.ssh/private_keys" ]; then
     ln -s "${HOME}/Dropbox/Security/ssh_keys" "${HOME}/.ssh/private_keys"
   fi
 }
