@@ -4,4 +4,10 @@ These are my dotfiles. I will be using [garethsaxby/workspace-setup](https://git
 
 These files (should!) all be sanitised and ready for others to grab contents from, if you feel so inclined.
 
-All files are named without dots, as the intention is that within the repository they should remain visible, and will be symbolically linked to their dotfile locations in my home directory. Also, I don't want them to conflict with dotfiles inside this repository.
+## Installation Process
+Installation is done via the `install.sh` script, which takes no arguments.
+
+Installation will link the files from the repository into the running user's home directory; if any existing files that match exist, they will not be linked and need to be removed by hand.
+
+## To Do
+- `file_list` needs to dynamically generate a file list for linking, removing files based on an exclusion list.
