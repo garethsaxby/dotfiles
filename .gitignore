@@ -1,2 +1,6 @@
+# Ignore the nova editor folder
+.nova
+
+# Ignoring SSH files
 .ssh/private_keys
 .ssh/known_hosts
