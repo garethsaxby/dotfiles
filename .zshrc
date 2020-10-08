@@ -40,3 +40,5 @@ export EDITOR='nvim'
 
 # Aliases
 alias ping='prettyping --nolegend'
+alias vim='nvim'
+alias vi='vim'
