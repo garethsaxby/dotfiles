@@ -4,3 +4,7 @@
 # Ignoring SSH files
 .ssh/private_keys
 .ssh/known_hosts
+
+# Ignore AWS unwanted files
+.aws/cli/
+.aws/credentials
