@@ -54,3 +54,10 @@ fi
 # eval "$(goenv init -)"
 # export PATH="$GOROOT/bin:$PATH"
 # export PATH="$PATH:$GOPATH/bin"
+
+# RVM Setup
+export PATH="${PATH}:${HOME}/.rvm/bin"
+source /Users/gsaxby/.rvm/scripts/rvm
+
+# Emacs Setup
+export PATH="${PATH}:${HOME}/.emacs.d/bin"
