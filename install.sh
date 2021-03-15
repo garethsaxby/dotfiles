@@ -27,7 +27,7 @@ function print {
 function file_list {
   print "Generating File List..."
   # TODO: Build list of dotfiles dynamically with exclude list
-  list=".aws .gitconfig .gitignore_global .ssh .zshrc"
+  list=".aws .gitconfig .gitignore_global .ssh .zshrc .git-template"
   printf '%s' "${list}"
   print "${list}"
 }
