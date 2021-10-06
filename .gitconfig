@@ -16,3 +16,4 @@
   rebase = false
 [init]
 	templateDir = /Users/gsaxby/.git-template
+	defaultBranch = main
