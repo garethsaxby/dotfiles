@@ -18,4 +18,40 @@ set noswapfile              " Disable swap files.
 " Visual Settings
 set termguicolors           " For enabling proper colours.
 set cursorline              " Set highlight for active line.
+
+" Plugin time baby!
+call plug#begin()
+" https://github.com/phanviet/vim-monokai-pro
+Plug 'phanviet/vim-monokai-pro'
+" https://github.com/itchyny/lightline.vim
+Plug 'itchyny/lightline.vim'
+" https://github.com/Yggdroot/indentLine
+Plug 'Yggdroot/indentLine'
+" https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
+" https://github.com/ryanoasis/vim-devicons
+" Load this last.
+Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
+" vim-monokai-pro Settings
 colorscheme monokai_pro     " Set colourscheme.
+
+" lightline Settings
+let g:lightline = {
+    \ 'colorscheme': 'monokai_pro',
+    \ }
+
+" startify Settings
+let g:startify_custom_header = [
+    \ ' ________  _______   ___      ___ ________  ________  ________       ',
+    \ '|\   ___ \|\  ___ \ |\  \    /  /|\   __  \|\   __  \|\   ____\      ',
+    \ '\ \  \_|\ \ \   __/|\ \  \  /  / | \  \|\  \ \  \|\  \ \  \___|_     ',
+    \ ' \ \  \ \\ \ \  \_|/_\ \  \/  / / \ \  \\\  \ \   ____\ \_____  \    ',
+    \ '  \ \  \_\\ \ \  \_|\ \ \    / /   \ \  \\\  \ \  \___|\|____|\  \   ',
+    \ '   \ \_______\ \_______\ \__/ /     \ \_______\ \__\     ____\_\  \  ',
+    \ '    \|_______|\|_______|\|__|/       \|_______|\|__|    |\_________\ ',
+    \ '                                                        \|_________| ',
+    \ ]
+
+let g:startify_bookmarks = [ '~/setup/dotfiles' ]
