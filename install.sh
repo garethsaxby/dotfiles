@@ -55,6 +55,12 @@ function link_ssh_keys {
   fi
 }
 
+function link_nvim {
+  print "Linking nvim config..."
+  if [ ! -L "${HOME}/.config/nvim" ] && [ ! -e "${HOME}/.config/nvim" ]; then
+    ln -s "${PWD}/nvim" "${HOME}/.config/nvim"
+  fi
+}
 
 function main {
   print "Installing dotfiles..."
@@ -62,6 +68,7 @@ function main {
   # shellcheck disable=SC2086 # We want to split on an IFS here
   link_files ${FILE_LIST}
   link_ssh_keys
+  link_nvim
   print "Dotfiles installed"
 }
 
