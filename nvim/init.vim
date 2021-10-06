@@ -12,6 +12,8 @@ set number                  " Enable line numbers.
 set cc=110                  " Set maximum line length indicator.
 filetype plugin indent on   " Allow automatic indenting for file types.
 syntax on                   " Enable syntax highlighting.
+set nobackup                " Disable backup files.
+set noswapfile              " Disable swap files.
 
 " Colour Scheme Settings
 set termguicolors
