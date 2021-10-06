@@ -37,6 +37,7 @@ source "${HOME}/.iterm2_shell_integration.zsh"
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Aliases
 alias ping='prettyping --nolegend'
