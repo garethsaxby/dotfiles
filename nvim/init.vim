@@ -29,6 +29,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/indentLine'
 " https://github.com/mhinz/vim-startify
 Plug 'mhinz/vim-startify'
+" https://github.com/airblade/vim-gitgutter
+Plug 'airblade/vim-gitgutter'
+" https://github.com/tpope/vim-fugitive
+Plug 'tpope/vim-fugitive'
 " https://github.com/ryanoasis/vim-devicons
 " Load this last.
 Plug 'ryanoasis/vim-devicons'
@@ -55,3 +59,6 @@ let g:startify_custom_header = [
     \ ]
 
 let g:startify_bookmarks = [ '~/setup/dotfiles' ]
+
+" gitgutter Settings
+let g:gitgutter_enabled = 1
