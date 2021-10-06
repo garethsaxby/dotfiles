@@ -15,6 +15,7 @@ syntax on                   " Enable syntax highlighting.
 set nobackup                " Disable backup files.
 set noswapfile              " Disable swap files.
 
-" Colour Scheme Settings
-set termguicolors
-colorscheme monokai_pro
+" Visual Settings
+set termguicolors           " For enabling proper colours.
+set cursorline              " Set highlight for active line.
+colorscheme monokai_pro     " Set colourscheme.
