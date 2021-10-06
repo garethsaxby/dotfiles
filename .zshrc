@@ -1,6 +1,6 @@
 # Configuring oh-my-zsh
 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 export ZSH="/Users/gsaxby/.oh-my-zsh"
 ZSH_THEME="agnoster"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -43,21 +43,3 @@ alias ping='prettyping --nolegend'
 alias vim='nvim'
 alias vi='vim'
 
-# PyEnv Setup
-#if command -v pyenv 1>/dev/null 2>&1; then
-#  eval "$(pyenv init -)"
-#fi
-
-# GoEnv Setup
-# export GOENV_ROOT="$HOME/.goenv"
-# export PATH="$GOENV_ROOT/bin:$PATH"
-# eval "$(goenv init -)"
-# export PATH="$GOROOT/bin:$PATH"
-# export PATH="$PATH:$GOPATH/bin"
-
-# RVM Setup
-export PATH="${PATH}:${HOME}/.rvm/bin"
-source /Users/gsaxby/.rvm/scripts/rvm
-
-# Emacs Setup
-export PATH="${PATH}:${HOME}/.emacs.d/bin"
