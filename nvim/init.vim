@@ -22,7 +22,7 @@ set termguicolors               " For enabling proper colours.
 set cursorline                  " Set highlight for active line.
 
 " Spellchecking Settings
-set spell=1                     " Enable spell checking.
+set spell                       " Enable spell checking.
 set spelllang=en_gb             " Set spell check language to British English.
 
 " Plugin time baby!
