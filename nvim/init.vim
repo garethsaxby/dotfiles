@@ -7,6 +7,7 @@ set tabstop=4		        " Setting tab width.
 set softtabstop=4	        " Four spaces match to tabs.
 set expandtab		        " Tabs become spaces.
 set shiftwidth=4            " Auto-indenting width.
+set smarttab                " Enable smarttab.
 set autoindent              " Enable auto-indenting.
 set number                  " Enable line numbers.
 set colorcolumn=110         " Set maximum line length indicator.
