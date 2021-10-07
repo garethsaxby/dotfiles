@@ -1,24 +1,29 @@
 " General neovim settings
-set nocompatible	        " Disable vi compatability mode.
-set showmatch		        " Show matching brackets.
-set ignorecase		        " Case insensitive matching.
-set hlsearch		        " Highlight searches.
-set tabstop=4		        " Setting tab width.
-set softtabstop=4	        " Four spaces match to tabs.
-set expandtab		        " Tabs become spaces.
-set shiftwidth=4            " Auto-indenting width.
-set smarttab                " Enable smarttab.
-set autoindent              " Enable auto-indenting.
-set number                  " Enable line numbers.
-set colorcolumn=110         " Set maximum line length indicator.
-filetype plugin indent on   " Allow automatic indenting for file types.
-syntax on                   " Enable syntax highlighting.
-set nobackup                " Disable backup files.
-set noswapfile              " Disable swap files.
+set nocompatible	            " Disable vi compatibility mode.
+set showmatch		            " Show matching brackets.
+set ignorecase		            " Case insensitive matching.
+set hlsearch		            " Highlight searches.
+set tabstop=4		            " Setting tab width.
+set softtabstop=4	            " Four spaces match to tabs.
+set expandtab		            " Tabs become spaces.
+set shiftwidth=4                " Auto-indenting width.
+set smarttab                    " Enable smart tab.
+set autoindent                  " Enable auto-indenting.
+set number                      " Enable line numbers.
+set colorcolumn=110             " Set maximum line length indicator.
+set backspace=indent,eol,start  " Set sensible backspace behaviour.
+filetype plugin indent on       " Allow automatic indenting for file types.
+syntax on                       " Enable syntax highlighting.
+set nobackup                    " Disable backup files.
+set noswapfile                  " Disable swap files.
 
 " Visual Settings
-set termguicolors           " For enabling proper colours.
-set cursorline              " Set highlight for active line.
+set termguicolors               " For enabling proper colours.
+set cursorline                  " Set highlight for active line.
+
+" Spellchecking Settings
+set spell=1                     " Enable spell checking.
+set spelllang=en_gb             " Set spell check language to British English.
 
 " Plugin time baby!
 call plug#begin()
@@ -42,7 +47,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " vim-monokai-pro Settings
-colorscheme monokai_pro     " Set colourscheme.
+colorscheme monokai_pro     " Set colour scheme.
 
 " lightline Settings
 let g:lightline = {
