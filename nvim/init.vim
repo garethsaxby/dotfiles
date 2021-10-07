@@ -34,6 +34,8 @@ Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
 " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
+" https://github.com/vimwiki/vimwiki
+Plug 'vimwiki/vimwiki'
 " https://github.com/ryanoasis/vim-devicons
 " Load this last.
 Plug 'ryanoasis/vim-devicons'
