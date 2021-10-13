@@ -1,6 +1,6 @@
 # Configuring oh-my-zsh
 
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 export ZSH="/Users/gsaxby/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DISABLE_UPDATE_PROMPT="true"
