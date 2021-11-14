@@ -5,7 +5,7 @@ export ZSH="/Users/gsaxby/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DISABLE_UPDATE_PROMPT="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git osx aws iterm2)
+plugins=(git macos aws iterm2)
 
 # Execute oh-my-zsh
 source $ZSH/oh-my-zsh.sh
