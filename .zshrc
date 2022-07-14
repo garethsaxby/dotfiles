@@ -5,7 +5,7 @@ export ZSH="/Users/gsaxby/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DISABLE_UPDATE_PROMPT="true"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git macos aws iterm2)
+plugins=(git macos aws iterm2 terraform)
 
 # Execute oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -25,6 +25,12 @@ export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 export EDITOR='nvim'
 export VISUAL='nvim'
+
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Aliases
 alias ping='prettyping --nolegend'
