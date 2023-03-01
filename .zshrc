@@ -24,7 +24,7 @@ export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 export EDITOR='nvim'
 export VISUAL='nvim'
-
+export HOMEBREW_NO_ANALYTICS=1
 
 # NVM
 # Disabled due to taking a long time for startup
