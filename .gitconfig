@@ -1,19 +1,18 @@
 [user]
   name = Gareth Saxby
   email = garethsaxby@users.noreply.github.com
-
-[credential]
-  helper = osxkeychain
-
 [core]
   excludesfile = ~/.gitignore_global
 
+# Git Command Behaviours
 [push]
   default = current
   followTags = true
-  
 [pull]
   rebase = false
 [init]
-	templateDir = /Users/gsaxby/.git-template
-	defaultBranch = main
+  defaultBranch = main
+
+# Specific Includes not to be stored in Git
+[include]
+  path = .git_includes/gitconfig
