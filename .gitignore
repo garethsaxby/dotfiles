@@ -14,3 +14,4 @@
 
 # Ignore neovim plugins
 nvim/plugged
+nvim/colors
