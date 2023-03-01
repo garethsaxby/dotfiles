@@ -48,13 +48,6 @@ function link_files {
   IFS="${OLD_IFS}"
 }
 
-function link_ssh_keys {
-  print "Linking ssh keys..."
-  if [ ! -L "${HOME}/.ssh/private_keys" ] && [ ! -e "${HOME}/.ssh/private_keys" ]; then
-    ln -s "${HOME}/Dropbox/Security/ssh_keys" "${HOME}/.ssh/private_keys"
-  fi
-}
-
 function link_nvim {
   print "Linking nvim config..."
   if [ ! -L "${HOME}/.config/nvim" ] && [ ! -e "${HOME}/.config/nvim" ]; then
@@ -67,7 +60,6 @@ function main {
   FILE_LIST="$(file_list)"
   # shellcheck disable=SC2086 # We want to split on an IFS here
   link_files ${FILE_LIST}
-  link_ssh_keys
   link_nvim
   print "Dotfiles installed"
 }
