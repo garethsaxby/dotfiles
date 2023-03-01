@@ -7,7 +7,9 @@
 
 # Ignore AWS unwanted files
 .aws/cli/
+.aws/sso/
 .aws/credentials
+.aws/config
 
 # Ignore neovim plugins
 nvim/plugged
