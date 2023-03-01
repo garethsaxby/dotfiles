@@ -8,7 +8,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git macos aws iterm2 terraform)
 
 # Execute oh-my-zsh
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # User configuration
 # Should happen after executing oh-my-zsh
@@ -39,4 +39,9 @@ alias vim='nvim'
 alias vi='vim'
 
 # Includes for untracked settings
-source "${HOME}/.zshrc_includes/work"
+INCLUDE_FILE="${HOME}/.zshrc_includes/work"
+if [ -e "${INCLUDE_FILE}" ]
+then
+  source "${INCLUDE_FILE}"
+fi
+
