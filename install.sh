@@ -38,7 +38,7 @@ function link_files {
   IFS=" "
   PWD="$(pwd)"
   for i in "$@"; do
-    if [ ! -L ~/${i} ] && [ ! -e ~/${i} ]; then
+    if [ ! -L ~/"${i}" ] && [ ! -e ~/"${i}" ]; then
       print "Linking .${i}..."
       ln -s "${PWD}/${i}" "${HOME}/${i}"
     else
