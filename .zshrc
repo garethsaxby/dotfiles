@@ -1,7 +1,7 @@
 # Configuring oh-my-zsh
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
-export ZSH="/Users/gsaxby/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DISABLE_UPDATE_PROMPT="true"
 COMPLETION_WAITING_DOTS="true"
@@ -38,3 +38,5 @@ alias ping='prettyping --nolegend'
 alias vim='nvim'
 alias vi='vim'
 
+# Includes for untracked settings
+source "${HOME}/.zshrc_includes/work"
