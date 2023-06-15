@@ -1,5 +1,10 @@
 # Configuring oh-my-zsh
-export PATH=$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:/opt/homebrew/opt/gnu-tar/libexec/gnubin:/opt/homebrew/opt/gawk/libexec/gnubin:$PATH
+if [[ "${SHELL}" == "/opt/homebrew/bin/zsh" ]]; then
+  export PATH=$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:/opt/homebrew/opt/gnu-tar/libexec/gnubin:/opt/homebrew/opt/gawk/libexec/gnubin:$PATH
+elif [[ "${SHELL}" == "/home/linuxbrew/.linuxbrew/bin/zsh" ]]; then
+  export PATH=$HOME/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 DISABLE_UPDATE_PROMPT="true"
