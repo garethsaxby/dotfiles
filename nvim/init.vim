@@ -41,6 +41,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " https://github.com/vimwiki/vimwiki
 Plug 'vimwiki/vimwiki'
+" https://github.com/editorconfig/editorconfig-vim
+Plug 'editorconfig/editorconfig-vim'
 " https://github.com/ryanoasis/vim-devicons
 " Load this last.
 Plug 'ryanoasis/vim-devicons'
