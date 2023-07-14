@@ -43,6 +43,9 @@ alias ping='prettyping --nolegend'
 alias vim='nvim'
 alias vi='vim'
 
+# Hook into direnv
+eval "$(direnv hook zsh)"
+
 # Includes for untracked settings
 INCLUDE_FILE="${HOME}/.zshrc_includes/work"
 if [ -e "${INCLUDE_FILE}" ]
